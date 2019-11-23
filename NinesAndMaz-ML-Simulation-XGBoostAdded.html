@@ -13086,7 +13086,7 @@ These added features split the hits landed, missed, and received into cross, jab
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[307]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="o">%%</span><span class="k">time</span>
@@ -13117,7 +13117,7 @@ df = pd.read_csv(&#39;SarahWolfEaten_addedFeatures.csv&#39;)
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Wall time: 78 ms
+<pre>Wall time: 13.3 s
 </pre>
 </div>
 </div>
@@ -13128,7 +13128,7 @@ df = pd.read_csv(&#39;SarahWolfEaten_addedFeatures.csv&#39;)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[308]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -13144,7 +13144,7 @@ df = pd.read_csv(&#39;SarahWolfEaten_addedFeatures.csv&#39;)
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[308]:</div>
+    <div class="prompt output_prompt">Out[2]:</div>
 
 
 
@@ -13325,7 +13325,7 @@ df = pd.read_csv(&#39;SarahWolfEaten_addedFeatures.csv&#39;)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[309]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
@@ -13341,7 +13341,7 @@ df = pd.read_csv(&#39;SarahWolfEaten_addedFeatures.csv&#39;)
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[309]:</div>
+    <div class="prompt output_prompt">Out[3]:</div>
 
 
 
@@ -13594,7 +13594,7 @@ df = pd.read_csv(&#39;SarahWolfEaten_addedFeatures.csv&#39;)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[310]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">colNames</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
@@ -13678,7 +13678,7 @@ df = pd.read_csv(&#39;SarahWolfEaten_addedFeatures.csv&#39;)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[311]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="n">colNames</span><span class="p">[</span><span class="mi">50</span><span class="p">:</span><span class="mi">75</span><span class="p">]</span>
@@ -13766,7 +13766,7 @@ df = pd.read_csv(&#39;SarahWolfEaten_addedFeatures.csv&#39;)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[312]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="n">colNames</span><span class="p">[</span><span class="mi">104</span><span class="p">:</span><span class="mi">130</span><span class="p">]</span>
@@ -13886,7 +13886,7 @@ df = pd.read_csv(&#39;SarahWolfEaten_addedFeatures.csv&#39;)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[313]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># remove/exclude target variable and time, notes, hits X2 received 15:19 and all types of hits landed by X1 </span>
@@ -13938,7 +13938,7 @@ df = pd.read_csv(&#39;SarahWolfEaten_addedFeatures.csv&#39;)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[314]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">dfn</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span>
@@ -13985,7 +13985,7 @@ df = pd.read_csv(&#39;SarahWolfEaten_addedFeatures.csv&#39;)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[315]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">stdscaler</span> <span class="o">=</span> <span class="n">preprocessing</span><span class="o">.</span><span class="n">StandardScaler</span><span class="p">()</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">)</span>
@@ -13998,10 +13998,29 @@ df = pd.read_csv(&#39;SarahWolfEaten_addedFeatures.csv&#39;)
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>C:\Users\m\Anaconda2\lib\site-packages\sklearn\utils\validation.py:595: DataConversionWarning: Data with input dtype int64 was converted to float64 by StandardScaler.
+  warnings.warn(msg, DataConversionWarning)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[316]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="s2">&quot;Training set samples: &quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">X_train</span><span class="p">)</span>
@@ -14037,7 +14056,7 @@ Testing set samples:  49
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[317]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">df2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;wolfey_addedFeatures.csv&#39;</span><span class="p">)</span>
@@ -14050,7 +14069,7 @@ Testing set samples:  49
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[318]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">df2</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span> <span class="c1">#the simulated features to test the target hits landed of Nines using Maz&#39;s actual hits landed</span>
@@ -14066,7 +14085,7 @@ Testing set samples:  49
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[318]:</div>
+    <div class="prompt output_prompt">Out[12]:</div>
 
 
 
@@ -14319,7 +14338,7 @@ Testing set samples:  49
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[319]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#this following vector of random samples taken from a random vector created in R software sample(x,n,replace=F)</span>
@@ -14360,7 +14379,7 @@ http://pandas.pydata.org/pandas-docs/stable/indexing.html#ix-indexer-is-deprecat
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[320]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">maz</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
@@ -14376,7 +14395,7 @@ http://pandas.pydata.org/pandas-docs/stable/indexing.html#ix-indexer-is-deprecat
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[320]:</div>
+    <div class="prompt output_prompt">Out[14]:</div>
 
 
 
@@ -14629,7 +14648,7 @@ http://pandas.pydata.org/pandas-docs/stable/indexing.html#ix-indexer-is-deprecat
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[321]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">maz</span><span class="o">.</span><span class="n">shape</span>
@@ -14645,7 +14664,7 @@ http://pandas.pydata.org/pandas-docs/stable/indexing.html#ix-indexer-is-deprecat
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[321]:</div>
+    <div class="prompt output_prompt">Out[15]:</div>
 
 
 
@@ -14662,7 +14681,7 @@ http://pandas.pydata.org/pandas-docs/stable/indexing.html#ix-indexer-is-deprecat
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[322]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">y_test1</span> <span class="o">=</span> <span class="n">maz</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">7</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
@@ -14679,7 +14698,7 @@ http://pandas.pydata.org/pandas-docs/stable/indexing.html#ix-indexer-is-deprecat
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[322]:</div>
+    <div class="prompt output_prompt">Out[16]:</div>
 
 
 
@@ -14696,7 +14715,7 @@ http://pandas.pydata.org/pandas-docs/stable/indexing.html#ix-indexer-is-deprecat
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[323]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">X_train_std</span> <span class="o">=</span> <span class="n">X_train_scaled</span> <span class="c1">#Nunez training samples to build model</span>
@@ -14710,7 +14729,7 @@ http://pandas.pydata.org/pandas-docs/stable/indexing.html#ix-indexer-is-deprecat
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[324]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">X_testN</span> <span class="o">=</span> <span class="n">X_test</span> <span class="c1">#Nunez, use this later</span>
@@ -14727,7 +14746,7 @@ http://pandas.pydata.org/pandas-docs/stable/indexing.html#ix-indexer-is-deprecat
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[324]:</div>
+    <div class="prompt output_prompt">Out[18]:</div>
 
 
 
@@ -14750,7 +14769,7 @@ http://pandas.pydata.org/pandas-docs/stable/indexing.html#ix-indexer-is-deprecat
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[325]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">X_test</span> <span class="o">=</span> <span class="n">maz</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span>
@@ -14798,7 +14817,7 @@ http://pandas.pydata.org/pandas-docs/stable/indexing.html#ix-indexer-is-deprecat
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[326]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">X_test_scaled</span><span class="o">.</span><span class="n">shape</span> <span class="c1">#Maz testing set</span>
@@ -14814,7 +14833,7 @@ http://pandas.pydata.org/pandas-docs/stable/indexing.html#ix-indexer-is-deprecat
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[326]:</div>
+    <div class="prompt output_prompt">Out[20]:</div>
 
 
 
@@ -14831,7 +14850,7 @@ http://pandas.pydata.org/pandas-docs/stable/indexing.html#ix-indexer-is-deprecat
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[327]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">maz</span><span class="o">.</span><span class="n">columns</span>
@@ -14847,7 +14866,7 @@ http://pandas.pydata.org/pandas-docs/stable/indexing.html#ix-indexer-is-deprecat
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[327]:</div>
+    <div class="prompt output_prompt">Out[21]:</div>
 
 
 
@@ -14871,7 +14890,7 @@ http://pandas.pydata.org/pandas-docs/stable/indexing.html#ix-indexer-is-deprecat
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[328]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="n">y_test</span> <span class="c1">#Nunez&#39;s hits landed in her testing set of instances</span>
@@ -18638,7 +18657,7 @@ df = pd.read_csv(&#39;SarahWolfEaten_addedFeatures.csv&#39;)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">xgboost</span> <span class="kn">import</span> <span class="n">XGBRegressor</span>
@@ -18657,7 +18676,7 @@ df = pd.read_csv(&#39;SarahWolfEaten_addedFeatures.csv&#39;)
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[14]:</div>
+    <div class="prompt output_prompt">Out[23]:</div>
 
 
 
@@ -18680,7 +18699,7 @@ df = pd.read_csv(&#39;SarahWolfEaten_addedFeatures.csv&#39;)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">mean_absolute_error</span>
@@ -18714,7 +18733,7 @@ df = pd.read_csv(&#39;SarahWolfEaten_addedFeatures.csv&#39;)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">my_model</span> <span class="o">=</span> <span class="n">XGBRegressor</span><span class="p">(</span><span class="n">n_estimators</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
@@ -18734,7 +18753,7 @@ df = pd.read_csv(&#39;SarahWolfEaten_addedFeatures.csv&#39;)
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[16]:</div>
+    <div class="prompt output_prompt">Out[25]:</div>
 
 
 
@@ -18757,7 +18776,7 @@ df = pd.read_csv(&#39;SarahWolfEaten_addedFeatures.csv&#39;)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">my_model</span> <span class="o">=</span> <span class="n">XGBRegressor</span><span class="p">(</span><span class="n">n_estimators</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">learning_rate</span><span class="o">=</span><span class="mf">0.05</span><span class="p">)</span><span class="c1">#the learning rate is a small value bw 0:1 that will yield</span>
@@ -18780,7 +18799,7 @@ df = pd.read_csv(&#39;SarahWolfEaten_addedFeatures.csv&#39;)
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[17]:</div>
+    <div class="prompt output_prompt">Out[26]:</div>
 
 
 
@@ -18803,7 +18822,7 @@ df = pd.read_csv(&#39;SarahWolfEaten_addedFeatures.csv&#39;)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">predictions</span> <span class="o">=</span> <span class="n">my_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test_std</span><span class="p">)</span>
@@ -18835,7 +18854,7 @@ df = pd.read_csv(&#39;SarahWolfEaten_addedFeatures.csv&#39;)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">my_model</span> <span class="o">=</span> <span class="n">XGBRegressor</span><span class="p">(</span><span class="n">n_estimators</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">learning_rate</span><span class="o">=</span><span class="mf">0.05</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span><span class="c1">#njobs is for parallelism set to the number </span>
@@ -18856,7 +18875,7 @@ df = pd.read_csv(&#39;SarahWolfEaten_addedFeatures.csv&#39;)
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[19]:</div>
+    <div class="prompt output_prompt">Out[37]:</div>
 
 
 
@@ -18879,7 +18898,7 @@ df = pd.read_csv(&#39;SarahWolfEaten_addedFeatures.csv&#39;)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">predictions</span> <span class="o">=</span> <span class="n">my_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test_std</span><span class="p">)</span>
@@ -18911,7 +18930,7 @@ df = pd.read_csv(&#39;SarahWolfEaten_addedFeatures.csv&#39;)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[54]:</div>
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="s1">&#39;XGBoost predicted values: </span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">predictions</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span>
@@ -18970,7 +18989,7 @@ Actual values of hits landed in the Nunez testing set:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[57]:</div>
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="s1">&#39;XGBoost accuracy in predicting hits landed: </span><span class="se">\n\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">list1</span><span class="p">,</span><span class="n">y_test</span><span class="p">)</span>
@@ -19000,6 +19019,151 @@ Actual values of hits landed in the Nunez testing set:
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="The-accuracy-in-Nunez's-training-set-used-to-build-the-model-to-test-on-her-testing-set-of-samples-was-83.7%">The accuracy in Nunez's training set used to build the model to test on her testing set of samples was 83.7%<a class="anchor-link" href="#The-accuracy-in-Nunez's-training-set-used-to-build-the-model-to-test-on-her-testing-set-of-samples-was-83.7%">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Next:-XGBoost-on-the-Nunez-model-of-training-set-X_train_std,-to-predict-similarity-of-the-testing-set-of-Mazvidal-X_test_scaled">Next: XGBoost on the Nunez model of training set X_train_std, to predict similarity of the testing set of Mazvidal X_test_scaled<a class="anchor-link" href="#Next:-XGBoost-on-the-Nunez-model-of-training-set-X_train_std,-to-predict-similarity-of-the-testing-set-of-Mazvidal-X_test_scaled">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">predictions</span> <span class="o">=</span> <span class="n">my_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test_scaled</span><span class="p">)</span><span class="c1">#Mazvidal&#39;s testing set of samples</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;Mean Absolute Error: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">mean_absolute_error</span><span class="p">(</span><span class="n">predictions</span><span class="p">,</span> <span class="n">y_test1</span><span class="p">)))</span><span class="c1">#Mazvidal&#39;s testing set true values y_test1</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Mean Absolute Error: 0.38451496192387175
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="s1">&#39;XGBoost predicted values: </span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">predictions</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span>
+
+<span class="n">list1</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">predictions</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mf">0.5</span><span class="p">:</span>
+        <span class="n">list1</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mf">1.5</span><span class="p">:</span>
+        <span class="n">list1</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">list1</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="k">print</span> <span class="s1">&#39;XGBoost predicted values rounded up or down:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">list1</span><span class="p">,</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span>
+<span class="k">print</span> <span class="s1">&#39;Actual values of hits landed in the Nunez testing set: </span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">y_test1</span><span class="p">,</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>XGBoost predicted values: 
+[0.2074711  0.28332138 0.40045482 0.40045482 0.3039863  0.37984484
+ 0.23043719 0.2074711  0.46595287 0.37984484 0.1793459  0.28332138
+ 0.31574234 0.20977229 0.46595287 0.46595287 0.37984484 0.14627364
+ 0.21797177 0.23043719 0.23043719 0.21797177 0.33640724 0.37984484
+ 0.1793459  0.37984484 0.37984484 0.23043719 0.37984484 0.46595287
+ 0.40045482 0.40045482 0.46595287 0.20977229 0.23043719 0.18807825
+ 0.37984484 0.23043719 0.46595287 0.16503885 0.23043719 0.48661777
+ 0.23043719 0.20977229 0.37984484 0.20977229 0.3039863  0.18807825
+ 0.43605375] 
+
+XGBoost predicted values rounded up or down:
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] 
+
+Actual values of hits landed in the Nunez testing set: 
+[0 1 0 0 0 0 0 0 0 1 0 0 1 0 1 1 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1
+ 0 0 0 1 0 0 0 0 0 0 0 0] 
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="s1">&#39;XGBoost accuracy in predicting hits landed: </span><span class="se">\n\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">list1</span><span class="p">,</span><span class="n">y_test1</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>XGBoost accuracy in predicting hits landed: 
+
+0.8163265306122449
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="The-similarity-with-XGBoost-in-Nunez's-model-used-on-the-testing-set-of-Mazvidal-samples-was-81.6%-similarity">The similarity with XGBoost in Nunez's model used on the testing set of Mazvidal samples was 81.6% similarity<a class="anchor-link" href="#The-similarity-with-XGBoost-in-Nunez's-model-used-on-the-testing-set-of-Mazvidal-samples-was-81.6%-similarity">&#182;</a></h2>
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
