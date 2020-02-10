@@ -205,3 +205,32 @@ Hits
 
 
 
+***
+
+Aside, put aside the above, some time later as in months. What about looking at those instances where Vulfen lands 2 hits in one second and plotting this against the number of hits and seconds that passed? Lets do that.
+
+***
+
+```{r, message=FALSE, error=FALSE, warning=FALSE}
+library(tidyr)
+```
+
+
+
+```{r}
+#x1_2 <- grep('X1$', colnames(Vulfen))
+#hits2 <- Vulfen[,c(2,4,x1_2)]
+
+X1_2plus <- subset(Vulfen, Vulfen$TotLandsX1 > 1)
+
+x1_2plus_tidy <- gather(X1_2plus, 'actionReaction', 'actionCounts', 16:123)
+x1_2plus_counts <- subset(x1_2plus_tidy, x1_2plus_tidy$actionCounts > 0)
+x1_2plus_counts
+```
+
+***
+The above demonstrates there is an error in the original sum or calculations of the binary action variables in developing the total hits. This will be fixed in that script that grabbed the commented actions and counted the hits landed. There should be more observations above than there are listed if there are 4 observations > 2, there should be at least 8 observations in the tidy version table to plot.This file is the SarahWolfEaten.R file that adds up the counts of actions in the dummy variable actions to export.
+
+***
+
+
